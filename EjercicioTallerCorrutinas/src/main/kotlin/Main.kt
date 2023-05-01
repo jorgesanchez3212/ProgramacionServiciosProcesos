@@ -4,7 +4,6 @@ import kotlin.random.Random
 
 fun main() = runBlocking {
     val mecanicos = listOf("Mecánico 1", "Mecánico 2", "Mecánico 3")
-    async { repararCoche("Mecanico1") }
     val trabajosPendientes = mecanicos.map { mecanico -> async { repararCoche(mecanico) } }
     val ingresos = trabajosPendientes.awaitAll()
     val ingresoTotal = ingresos.sum()
