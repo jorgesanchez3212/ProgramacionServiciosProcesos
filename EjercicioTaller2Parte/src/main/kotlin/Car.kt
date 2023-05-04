@@ -1,2 +1,2 @@
-data class Car(val num : Int) {
+data class Car(val coste : Int) {
 }
