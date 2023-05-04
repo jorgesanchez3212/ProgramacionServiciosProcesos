@@ -1,6 +1,7 @@
-## EJERCICIO SUMA DE LAS MEDIAS DE LOS BLOQUES DE 10 DE UNA LISTA DE 100 NÚMEROS ALEATORIOS
+## EJERCICIO 
 
-Hacerlo con hilos (Pool maximo de 7 hilos) y con corrutinas y medir los tiempos.
+SUMA DE LAS MEDIAS DE LOS BLOQUES DE 10 DE UNA LISTA DE 100 NÚMEROS ALEATORIOS
+Hacerlo con corrutinas y medir los tiempos.
 
 ## SOLUCIÓN
 
