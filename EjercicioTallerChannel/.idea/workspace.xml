@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ed3807-1db8-4e8b-af3e-9633f2c2665a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Taller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Taller.kt" afterDir="false" />
-    </list>
+    <list default="true" id="c2ed3807-1db8-4e8b-af3e-9633f2c2665a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683566663690</updated>
       <workItem from="1683566665174" duration="2786000" />
-      <workItem from="1683624239475" duration="4764000" />
+      <workItem from="1683624239475" duration="4875000" />
     </task>
     <servers />
   </component>
