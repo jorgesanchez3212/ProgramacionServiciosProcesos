@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ed3807-1db8-4e8b-af3e-9633f2c2665a" name="Changes" comment="" />
+    <list default="true" id="c2ed3807-1db8-4e8b-af3e-9633f2c2665a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Taller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Taller.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +65,7 @@
       <workItem from="1683566665174" duration="2786000" />
       <workItem from="1683624239475" duration="4875000" />
       <workItem from="1683632393890" duration="13000" />
+      <workItem from="1683632537057" duration="71000" />
     </task>
     <servers />
   </component>

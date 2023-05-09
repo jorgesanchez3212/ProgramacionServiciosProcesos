@@ -10,6 +10,8 @@ data class Taller(
     val nombre: String,
     val listaCoche : BlockingQueue<Coche>
 ) {
+
+
     val mutex = Mutex()
     val channel = Channel<Coche>(5)
 
@@ -18,8 +20,8 @@ data class Taller(
         var recaudacion = 0
         var coche : Coche
         var i = 0
-        println("Soy el mecánico $nombre")
 
+        println("Soy el mecánico $nombre")
         while (listaCoche.isNotEmpty()){
                 mutex.withLock {
                     val car = listaCoche.take()
@@ -27,8 +29,6 @@ data class Taller(
                     coche = channel.receive()
                 }
             println("Soy el mecánico $nombre y voy a arreglar el coche $coche")
-
-
             delay(Random.nextLong(300,600))
             recaudacion += coche.coste
 
