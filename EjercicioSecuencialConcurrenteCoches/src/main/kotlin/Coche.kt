@@ -1,0 +1,1 @@
+data class Coche(val reparacion: Double, val precio: Double)

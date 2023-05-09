@@ -14,25 +14,22 @@ fun main() = runBlocking<Unit> {
 
     println("Ejecucion con corrutinas launch")
     measureTimeMillis {
-        val mutex = Mutex() // Para evitar la condicion de carrera
+        val mutex = Mutex()
         var recaudacion = 0
         val jobs = listaMecanicos.mapIndexed { index, mecanico ->
             println("Soy el mecanico $index y comienzo a reparar")
             myScope.launch {
                 val res = mecanico.repararCoche()
-                //Para evitar la condicion de carrera
                 mutex.withLock {
                     recaudacion += res
                 }
             }
         }
-
-        //Esperamos a que todos terminen
         jobs.joinAll()
-        println("Recaudacion total corrutinas launch $recaudacion")
+        println("Recaudacion total $recaudacion")
 
     }.also {
-        println("Tiempo total de ejecuccion total es $it ms ")
+        println("Tiempo total de ejecución total es $it ms ")
     }
 
 
@@ -40,14 +37,12 @@ println("Ejecución con Async/Await")
     measureTimeMillis {
         var recaudacion = 0
         val pendientes = listaMecanicos.mapIndexed { index, mecanico ->
-            println("Soy el mecanico $index y comienzo a reparar")
+            println("Soy el mecanico $index y comienzo a reparar los coches")
             myScope.async {
                 mecanico.repararCoche()
             }
         }
 
-
-        //Esperamos a que todos terminen
         pendientes.forEach{ recaudacion += it.await() }
         println("Recaudacion total es: $recaudacion EUROS ")
 
