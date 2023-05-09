@@ -13,7 +13,7 @@ data class Taller(
         println("Soy el mecanido $nombre y tengo ${misCoches.size} coches")
         measureTimeMillis {
             misCoches.forEachIndexed { index, car ->
-                println("Soy el mecanico $nombre y estoy arreglado un coche coche $index")
+                println("Soy el mecanico $nombre y estoy arreglado un coche $index")
                 delay(Random.nextLong(300,600))
                 recaudacion += car.coste
             }
